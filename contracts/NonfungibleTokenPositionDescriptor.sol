@@ -103,8 +103,6 @@ contract NonfungibleTokenPositionDescriptor is INonfungibleTokenPositionDescript
         if (chainId == 1) {
             if (token == DAI) {
                 return TokenRatioSortOrder.NUMERATOR_MOST;
-            } else {
-                return 0;
             }
         }
         return 0;
